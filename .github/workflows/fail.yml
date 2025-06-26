@@ -1,0 +1,14 @@
+name: Always Fail
+
+# Run this workflow on every Pull Request
+on:
+  pull_request:
+
+jobs:
+  fail-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: This step will always fail
+        run: |
+          echo "This check is designed to fail."
+          exit 1
