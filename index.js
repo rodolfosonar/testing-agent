@@ -13,7 +13,7 @@ app.get('/', (req, res) => {
 // XSS: unsanitized user input reflected in HTML response
 app.get('/search', (req, res) => {
   const query = req.query.q;
-  res.send(`<h1>Results for: ${query}</h1>`);
+  res.contentType('text/plain').send(`<h1>Results for: ${query}</h1>`);
 });
 
 // Command injection: user input passed directly to exec
