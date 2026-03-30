@@ -19,7 +19,7 @@ app.get('/search', (req, res) => {
 // Command injection: user input passed directly to exec
 app.get('/ping', (req, res) => {
   const host = req.query.host;
-  exec(`ping -c 1 ${host}`, (err, stdout) => {
+  execFile('ping', ['-c', '1', host], (err, stdout) => {
     res.send(stdout);
   });
 });
