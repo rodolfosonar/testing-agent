@@ -16,6 +16,10 @@
     "semver": "5.7.1",
     "tar": "4.4.8",
     "ws": "7.4.5",
-    "path-parse": "1.0.6"
+    "path-parse": "1.0.6",
+    "xmlhttprequest-ssl": "1.5.5",
+    "request": "2.88.0",
+    "handlebars": "4.7.6",
+    "serialize-javascript": "2.1.1"
   }
 }
