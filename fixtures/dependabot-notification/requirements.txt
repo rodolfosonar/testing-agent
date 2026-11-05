@@ -2,4 +2,4 @@
 # Intentionally vulnerable pin to trigger a new security alert.
 # Advisory: GHSA-8q59-q68h-6hv4 (CVE-2020-14343).
 # Delete this fixture after checking the notification.
-PyYAML==5.3.1
+PyYAML==5.4
